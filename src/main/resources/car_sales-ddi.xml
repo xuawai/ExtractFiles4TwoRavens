@@ -1,0 +1,385 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<codeBook
+    xmlns="http://www.icpsr.umich.edu/DDI" version="2.0">
+    <stdyDscr>
+        <citation>
+            <titlStmt>
+                <titl>Car Sales</titl>
+                <IDNo agency="doi">10.5072/FK2/FRRFPI</IDNo>
+            </titlStmt>
+            <rspStmt>
+                <AuthEnty>Lee, Eddy</AuthEnty>
+            </rspStmt>
+            <biblCit>Lee, Eddy, 2017, "Car Sales", doi:10.5072/FK2/FRRFPI, ROOT Dataverse, DRAFT VERSION [UNF:6:y9Dj+UoKXsRtxzuAsliXRw==]</biblCit>
+        </citation>
+    </stdyDscr>
+    <fileDscr ID="f17">
+        <fileTxt>
+            <fileName>car_sales.tab</fileName>
+            <dimensns>
+                <caseQnty>157</caseQnty>
+                <varQnty>26</varQnty>
+            </dimensns>
+            <fileType>text/tab-separated-values</fileType>
+        </fileTxt>
+        <notes level="file" type="VDC:UNF" subject="Universal Numeric Fingerprint">UNF:6:y9Dj+UoKXsRtxzuAsliXRw==</notes>
+    </fileDscr>
+    <dataDscr>
+        <var ID="v1912" name="manufact" intrvl="discrete">
+            <location fileid="f17"/>
+            <labl level="variable">Manufacturer</labl>
+            <varFormat type="character"/>
+            <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:3I+zVcp0CC59vHJo0fwUAg==</notes>
+        </var>
+        <var ID="v1904" name="model" intrvl="discrete">
+            <location fileid="f17"/>
+            <labl level="variable">Model</labl>
+            <varFormat type="character"/>
+            <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:siwwgo1owxs3nN6oE20jjQ==</notes>
+        </var>
+        <var ID="v1923" name="sales" intrvl="contin">
+            <location fileid="f17"/>
+            <labl level="variable">Sales in thousands</labl>
+            <sumStat type="medn">29.45</sumStat>
+            <sumStat type="vald">157.0</sumStat>
+            <sumStat type="min">0.11</sumStat>
+            <sumStat type="invd">0.0</sumStat>
+            <sumStat type="mode">.</sumStat>
+            <sumStat type="mean">52.99807643312102</sumStat>
+            <sumStat type="max">540.561</sumStat>
+            <sumStat type="stdev">68.02942199750512</sumStat>
+            <varFormat type="numeric"/>
+            <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:uJca6nKYG/i1X4zgT9u8kw==</notes>
+        </var>
+        <var ID="v1911" name="resale" intrvl="contin">
+            <location fileid="f17"/>
+            <labl level="variable">4-year resale value</labl>
+            <sumStat type="invd">36.0</sumStat>
+            <sumStat type="mode">.</sumStat>
+            <sumStat type="medn">14.18</sumStat>
+            <sumStat type="max">67.55</sumStat>
+            <sumStat type="mean">18.07297520661157</sumStat>
+            <sumStat type="stdev">11.453384099225005</sumStat>
+            <sumStat type="min">5.16</sumStat>
+            <sumStat type="vald">121.0</sumStat>
+            <varFormat type="numeric"/>
+            <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:8h7zQgl8X+WN2nUTFw0+bQ==</notes>
+        </var>
+        <var ID="v1916" name="type" intrvl="discrete">
+            <location fileid="f17"/>
+            <labl level="variable">Vehicle type</labl>
+            <sumStat type="invd">0.0</sumStat>
+            <sumStat type="vald">157.0</sumStat>
+            <sumStat type="max">1.0</sumStat>
+            <sumStat type="mean">0.26114649681528657</sumStat>
+            <sumStat type="stdev">0.44066524324734224</sumStat>
+            <sumStat type="mode">.</sumStat>
+            <sumStat type="medn">0.0</sumStat>
+            <sumStat type="min">0.0</sumStat>
+            <catgry>
+                <catValu>0</catValu>
+                <labl level="category">Automobile</labl>
+            </catgry>
+            <catgry>
+                <catValu>1</catValu>
+                <labl level="category">Truck</labl>
+            </catgry>
+            <varFormat type="numeric"/>
+            <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:/y2w+WRg7ELTUXRyUbKeaw==</notes>
+        </var>
+        <var ID="v1928" name="price" intrvl="contin">
+            <location fileid="f17"/>
+            <labl level="variable">Price in thousands</labl>
+            <sumStat type="min">9.235</sumStat>
+            <sumStat type="mean">27.39075483870968</sumStat>
+            <sumStat type="medn">22.799</sumStat>
+            <sumStat type="mode">.</sumStat>
+            <sumStat type="vald">155.0</sumStat>
+            <sumStat type="stdev">14.351653189238549</sumStat>
+            <sumStat type="invd">2.0</sumStat>
+            <sumStat type="max">85.5</sumStat>
+            <varFormat type="numeric"/>
+            <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:U3o00PM+aTMbvltuhTqZGQ==</notes>
+        </var>
+        <var ID="v1909" name="engine_s" intrvl="contin">
+            <location fileid="f17"/>
+            <labl level="variable">Engine size</labl>
+            <sumStat type="medn">3.0</sumStat>
+            <sumStat type="mode">.</sumStat>
+            <sumStat type="invd">1.0</sumStat>
+            <sumStat type="vald">156.0</sumStat>
+            <sumStat type="max">8.0</sumStat>
+            <sumStat type="stdev">1.0446529732758276</sumStat>
+            <sumStat type="min">1.0</sumStat>
+            <sumStat type="mean">3.0608974358974357</sumStat>
+            <varFormat type="numeric"/>
+            <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:6l1bwxT66Ga+4I++MDdb5Q==</notes>
+        </var>
+        <var ID="v1924" name="horsepow" intrvl="discrete">
+            <location fileid="f17"/>
+            <labl level="variable">Horsepower</labl>
+            <sumStat type="mean">185.94871794871793</sumStat>
+            <sumStat type="medn">177.5</sumStat>
+            <sumStat type="min">55.0</sumStat>
+            <sumStat type="invd">1.0</sumStat>
+            <sumStat type="vald">156.0</sumStat>
+            <sumStat type="mode">.</sumStat>
+            <sumStat type="max">450.0</sumStat>
+            <sumStat type="stdev">56.70032085837357</sumStat>
+            <varFormat type="numeric"/>
+            <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:nB/+zrYZMLXr8sKSjAwx1Q==</notes>
+        </var>
+        <var ID="v1918" name="wheelbas" intrvl="contin">
+            <location fileid="f17"/>
+            <labl level="variable">Wheelbase</labl>
+            <sumStat type="stdev">7.641303029809964</sumStat>
+            <sumStat type="min">92.6</sumStat>
+            <sumStat type="invd">1.0</sumStat>
+            <sumStat type="mode">.</sumStat>
+            <sumStat type="max">138.7</sumStat>
+            <sumStat type="mean">107.48717948717949</sumStat>
+            <sumStat type="vald">156.0</sumStat>
+            <sumStat type="medn">107.0</sumStat>
+            <varFormat type="numeric"/>
+            <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:OYXrjxyZ+wZgyeKOdRXEGg==</notes>
+        </var>
+        <var ID="v1907" name="width" intrvl="contin">
+            <location fileid="f17"/>
+            <labl level="variable">Width</labl>
+            <sumStat type="min">62.6</sumStat>
+            <sumStat type="medn">70.55</sumStat>
+            <sumStat type="vald">156.0</sumStat>
+            <sumStat type="mode">.</sumStat>
+            <sumStat type="mean">71.15</sumStat>
+            <sumStat type="invd">1.0</sumStat>
+            <sumStat type="max">79.9</sumStat>
+            <sumStat type="stdev">3.4518718624593676</sumStat>
+            <varFormat type="numeric"/>
+            <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:j+sYqaWbpFDXZcs0Iztq8Q==</notes>
+        </var>
+        <var ID="v1920" name="length" intrvl="contin">
+            <location fileid="f17"/>
+            <labl level="variable">Length</labl>
+            <sumStat type="stdev">13.431754284516828</sumStat>
+            <sumStat type="medn">187.9</sumStat>
+            <sumStat type="mode">.</sumStat>
+            <sumStat type="vald">156.0</sumStat>
+            <sumStat type="mean">187.34358974358975</sumStat>
+            <sumStat type="invd">1.0</sumStat>
+            <sumStat type="min">149.4</sumStat>
+            <sumStat type="max">224.5</sumStat>
+            <varFormat type="numeric"/>
+            <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:8p07gIrzrKtD5/bxy3HP5Q==</notes>
+        </var>
+        <var ID="v1908" name="curb_wgt" intrvl="contin">
+            <location fileid="f17"/>
+            <labl level="variable">Curb weight</labl>
+            <sumStat type="invd">2.0</sumStat>
+            <sumStat type="max">5.572</sumStat>
+            <sumStat type="vald">155.0</sumStat>
+            <sumStat type="medn">3.342</sumStat>
+            <sumStat type="stdev">0.6305016344292965</sumStat>
+            <sumStat type="mean">3.3780258064516127</sumStat>
+            <sumStat type="mode">.</sumStat>
+            <sumStat type="min">1.895</sumStat>
+            <varFormat type="numeric"/>
+            <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:ysAFWVGUXCV7SeylKVPhLA==</notes>
+        </var>
+        <var ID="v1925" name="fuel_cap" intrvl="contin">
+            <location fileid="f17"/>
+            <labl level="variable">Fuel capacity</labl>
+            <sumStat type="invd">1.0</sumStat>
+            <sumStat type="min">10.3</sumStat>
+            <sumStat type="max">32.0</sumStat>
+            <sumStat type="medn">17.2</sumStat>
+            <sumStat type="stdev">3.8879212648646337</sumStat>
+            <sumStat type="vald">156.0</sumStat>
+            <sumStat type="mean">17.951923076923077</sumStat>
+            <sumStat type="mode">.</sumStat>
+            <varFormat type="numeric"/>
+            <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:sPdCWQyshh93WsI3GKgSuw==</notes>
+        </var>
+        <var ID="v1915" name="mpg" intrvl="contin">
+            <location fileid="f17"/>
+            <labl level="variable">Fuel efficiency</labl>
+            <sumStat type="vald">154.0</sumStat>
+            <sumStat type="invd">3.0</sumStat>
+            <sumStat type="mode">.</sumStat>
+            <sumStat type="max">45.0</sumStat>
+            <sumStat type="mean">23.843506493506492</sumStat>
+            <sumStat type="min">15.0</sumStat>
+            <sumStat type="stdev">4.2827198816785685</sumStat>
+            <sumStat type="medn">24.0</sumStat>
+            <varFormat type="numeric"/>
+            <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:W15piGZ+hnpBwY0GWj06YA==</notes>
+        </var>
+        <var ID="v1929" name="lnsales" intrvl="contin">
+            <location fileid="f17"/>
+            <labl level="variable">Log-transformed sales</labl>
+            <sumStat type="stdev">1.318213236614227</sumStat>
+            <sumStat type="min">-2.2072749131897207</sumStat>
+            <sumStat type="vald">157.0</sumStat>
+            <sumStat type="medn">3.3826939100975957</sumStat>
+            <sumStat type="mode">.</sumStat>
+            <sumStat type="max">6.2926074891756105</sumStat>
+            <sumStat type="invd">0.0</sumStat>
+            <sumStat type="mean">3.2958783046325513</sumStat>
+            <varFormat type="numeric"/>
+            <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:5FBvggYrvpAZWXkHmrlFag==</notes>
+        </var>
+        <var ID="v1914" name="zresale" intrvl="contin">
+            <location fileid="f17"/>
+            <labl level="variable">Zscore:  4-year resale value</labl>
+            <sumStat type="mode">.</sumStat>
+            <sumStat type="medn">-0.33989737643348505</sumStat>
+            <sumStat type="mean">-2.8948377212333626E-16</sumStat>
+            <sumStat type="invd">36.0</sumStat>
+            <sumStat type="min">-1.1274375411443096</sumStat>
+            <sumStat type="vald">121.0</sumStat>
+            <sumStat type="max">4.319860782171472</sumStat>
+            <sumStat type="stdev">0.9999999999999999</sumStat>
+            <varFormat type="numeric"/>
+            <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:ywMeEC27tgjzh9l12kqMSg==</notes>
+        </var>
+        <var ID="v1906" name="ztype" intrvl="contin">
+            <location fileid="f17"/>
+            <labl level="variable">Zscore:  Type</labl>
+            <sumStat type="stdev">1.0000000000000007</sumStat>
+            <sumStat type="mode">.</sumStat>
+            <sumStat type="invd">0.0</sumStat>
+            <sumStat type="vald">157.0</sumStat>
+            <sumStat type="min">-0.5926187754015971</sumStat>
+            <sumStat type="mean">1.5557265313218756E-16</sumStat>
+            <sumStat type="medn">-0.5926187754015971</sumStat>
+            <sumStat type="max">1.6766775108923242</sumStat>
+            <varFormat type="numeric"/>
+            <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:S0eWL0WCTUuHRJnmhdgqsQ==</notes>
+        </var>
+        <var ID="v1919" name="zprice" intrvl="contin">
+            <location fileid="f17"/>
+            <labl level="variable">Zscore:  Price in thousands</labl>
+            <sumStat type="medn">-0.31994605626010864</sumStat>
+            <sumStat type="vald">155.0</sumStat>
+            <sumStat type="min">-1.2650636549887933</sumStat>
+            <sumStat type="mode">.</sumStat>
+            <sumStat type="mean">-3.9323383259303927E-16</sumStat>
+            <sumStat type="stdev">1.0000000000000002</sumStat>
+            <sumStat type="max">4.048958290384483</sumStat>
+            <sumStat type="invd">2.0</sumStat>
+            <varFormat type="numeric"/>
+            <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:hcmpumt8GPh2J9gbA/nG7Q==</notes>
+        </var>
+        <var ID="v1927" name="zengine_" intrvl="contin">
+            <location fileid="f17"/>
+            <labl level="variable">Zscore:  Engine size</labl>
+            <sumStat type="mode">.</sumStat>
+            <sumStat type="medn">-0.05829441685928703</sumStat>
+            <sumStat type="stdev">0.9999999999999994</sumStat>
+            <sumStat type="mean">9.04191251786065E-16</sumStat>
+            <sumStat type="invd">1.0</sumStat>
+            <sumStat type="max">4.727984020008577</sumStat>
+            <sumStat type="vald">156.0</sumStat>
+            <sumStat type="min">-1.9728057916064325</sumStat>
+            <varFormat type="numeric"/>
+            <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:G3XkvINnYI6AZ7tSm6AD5g==</notes>
+        </var>
+        <var ID="v1905" name="zhorsepo" intrvl="contin">
+            <location fileid="f17"/>
+            <labl level="variable">Zscore:  Horsepower</labl>
+            <sumStat type="max">4.656962748250245</sumStat>
+            <sumStat type="min">-2.309488129278888</sumStat>
+            <sumStat type="mode">.</sumStat>
+            <sumStat type="mean">9.006328446558562E-16</sumStat>
+            <sumStat type="stdev">1.0000000000000004</sumStat>
+            <sumStat type="vald">156.0</sumStat>
+            <sumStat type="invd">1.0</sumStat>
+            <sumStat type="medn">-0.14900652801985304</sumStat>
+            <varFormat type="numeric"/>
+            <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:rzlDN3TepSXDGJ/4lPs+sQ==</notes>
+        </var>
+        <var ID="v1922" name="zwheelba" intrvl="contin">
+            <location fileid="f17"/>
+            <labl level="variable">Zscore:  Wheelbase</labl>
+            <sumStat type="min">-1.948251421138805</sumStat>
+            <sumStat type="vald">156.0</sumStat>
+            <sumStat type="medn">-0.06375607475308216</sumStat>
+            <sumStat type="invd">1.0</sumStat>
+            <sumStat type="stdev">0.9999999999999996</sumStat>
+            <sumStat type="mean">-3.93488660458493E-15</sumStat>
+            <sumStat type="max">4.084751041943263</sumStat>
+            <sumStat type="mode">.</sumStat>
+            <varFormat type="numeric"/>
+            <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:9KVJZ+wZCJtdbOOJCpDceg==</notes>
+        </var>
+        <var ID="v1917" name="zwidth" intrvl="contin">
+            <location fileid="f17"/>
+            <labl level="variable">Zscore:  Width</labl>
+            <sumStat type="invd">1.0</sumStat>
+            <sumStat type="medn">-0.1738187348508632</sumStat>
+            <sumStat type="mean">6.6784185019759416E-15</sumStat>
+            <sumStat type="max">2.534856549908514</sumStat>
+            <sumStat type="vald">156.0</sumStat>
+            <sumStat type="mode">.</sumStat>
+            <sumStat type="min">-2.476916971624876</sumStat>
+            <sumStat type="stdev">1.0</sumStat>
+            <varFormat type="numeric"/>
+            <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:2itrVmNxW43uNM7qI5mjAA==</notes>
+        </var>
+        <var ID="v1913" name="zlength" intrvl="contin">
+            <location fileid="f17"/>
+            <labl level="variable">Zscore:  Length</labl>
+            <sumStat type="min">-2.8249169051081005</sumStat>
+            <sumStat type="max">2.766311046892928</sumStat>
+            <sumStat type="invd">1.0</sumStat>
+            <sumStat type="vald">156.0</sumStat>
+            <sumStat type="medn">0.04142498772864531</sumStat>
+            <sumStat type="mode">.</sumStat>
+            <sumStat type="stdev">1.0000000000000002</sumStat>
+            <sumStat type="mean">1.8468133005783856E-15</sumStat>
+            <varFormat type="numeric"/>
+            <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:14REVvDwb/fe3Ay9ZU/84w==</notes>
+        </var>
+        <var ID="v1910" name="zcurb_wg" intrvl="contin">
+            <location fileid="f17"/>
+            <labl level="variable">Zscore:  Curb weight</labl>
+            <sumStat type="stdev">0.9999999999999998</sumStat>
+            <sumStat type="medn">-0.05713832365275495</sumStat>
+            <sumStat type="min">-2.352136339494163</sumStat>
+            <sumStat type="invd">2.0</sumStat>
+            <sumStat type="max">3.4797280034559797</sumStat>
+            <sumStat type="mode">.</sumStat>
+            <sumStat type="vald">155.0</sumStat>
+            <sumStat type="mean">1.1302786663603206E-15</sumStat>
+            <varFormat type="numeric"/>
+            <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:Jyu5INNQGkfzEbg84bFPjw==</notes>
+        </var>
+        <var ID="v1921" name="zfuel_ca" intrvl="contin">
+            <location fileid="f17"/>
+            <labl level="variable">Zscore:  Fuel capacity</labl>
+            <sumStat type="medn">-0.1933997696193712</sumStat>
+            <sumStat type="invd">1.0</sumStat>
+            <sumStat type="max">3.6132616804846873</sumStat>
+            <sumStat type="mean">1.072503909044943E-15</sumStat>
+            <sumStat type="mode">.</sumStat>
+            <sumStat type="min">-1.9681270673030198</sumStat>
+            <sumStat type="stdev">1.0000000000000009</sumStat>
+            <sumStat type="vald">156.0</sumStat>
+            <varFormat type="numeric"/>
+            <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:NfvCZOqrjevH4vkrHHGSXg==</notes>
+        </var>
+        <var ID="v1926" name="zmpg" intrvl="contin">
+            <location fileid="f17"/>
+            <labl level="variable">Zscore:  Fuel efficiency</labl>
+            <sumStat type="invd">3.0</sumStat>
+            <sumStat type="mode">.</sumStat>
+            <sumStat type="min">-2.0649276015783595</sumStat>
+            <sumStat type="mean">2.787813270276286E-15</sumStat>
+            <sumStat type="medn">0.036540682280668424</sumStat>
+            <sumStat type="stdev">1.0</sumStat>
+            <sumStat type="vald">154.0</sumStat>
+            <sumStat type="max">4.939966677951733</sumStat>
+            <varFormat type="numeric"/>
+            <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:b7RkptJCjjTBnrtMBg5ShA==</notes>
+        </var>
+    </dataDscr>
+</codeBook>
