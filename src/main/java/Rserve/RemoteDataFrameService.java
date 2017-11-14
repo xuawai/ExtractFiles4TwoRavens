@@ -11,8 +11,8 @@ public class RemoteDataFrameService {
 //    private static String TMP_TABDATA_FILE_EXT = ".tab";
 //    private static String TMP_RDATA_FILE_EXT = ".RData";
     private static String PREPROCESS_FILE_PREFIX = "dataversePreprocess_";
-    public static String LOCAL_TEMP_DIR = System.getProperty("java.io.tmpdir");
-
+//    public static String LOCAL_TEMP_DIR = System.getProperty("java.io.tmpdir");
+    public static String LOCAL_TEMP_DIR = "/Users/liyuan/Documents/软件工程/ExtractFiles4TwoRavens/src/main/resources";
     // 配置Rserve文件
     private static String RSERVE_HOST = "127.0.0.1";
     private static String RSERVE_USER = null;
@@ -164,7 +164,7 @@ public class RemoteDataFrameService {
             // Finally, transfer the saved file back on the application side:
 
             int fileSize = getFileSize(c,tempFileNameOut);
-            preprocessedDataFile = transferRemoteFile(c, tempFileNameOut, PREPROCESS_FILE_PREFIX, "json", fileSize);
+            preprocessedDataFile = transferRemoteFile(c, tempFileNameOut, PREPROCESS_FILE_PREFIX, "prep", fileSize);
 
             String deleteLine = "file.remove('"+tempFileNameOut+"')";
             c.eval(deleteLine);
