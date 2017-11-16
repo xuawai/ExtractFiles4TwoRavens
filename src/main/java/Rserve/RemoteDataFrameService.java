@@ -12,16 +12,17 @@ public class RemoteDataFrameService {
 //    private static String TMP_RDATA_FILE_EXT = ".RData";
     private static String PREPROCESS_FILE_PREFIX = "dataversePreprocess_";
 //    public static String LOCAL_TEMP_DIR = System.getProperty("java.io.tmpdir");
+    // 保存结果文件路径
     public static String LOCAL_TEMP_DIR = "/Users/liyuan/Documents/软件工程/ExtractFiles4TwoRavens/src/main/resources";
     // 配置Rserve文件
     private static String RSERVE_HOST = "127.0.0.1";
     private static String RSERVE_USER = null;
     private static String RSERVE_PWD = null;
     private static int    RSERVE_PORT = 6311;
-
+    // R脚本路径
     private static String DATAVERSE_R_FUNCTIONS = "scripts/dataverse_r_functions.R";
     private static String DATAVERSE_R_PREPROCESSING = "scripts/preprocess.R";
-
+    // 传入的Rserve的临时文件的路径
     public static String RSERVE_TMP_DIR="/Users/liyuan/Documents/Junk/Rserv";
 
     public String PID = null;
@@ -29,7 +30,7 @@ public class RemoteDataFrameService {
     public String tempFileNameOut = "result";
 
 
-    //如果工作文件夹路径不存在就创建
+    // 如果工作文件夹路径不存在就创建
     public void setupWorkingDirectory(RConnection c) {
 
         try {
@@ -128,11 +129,11 @@ public class RemoteDataFrameService {
         try {
 
             // Set up an Rserve connection
-            // 在这里修改RSERVE_HOST，和 RSERVE_PORT, RSERVE_USER, RSERRVE_PWD
+            // 修改RSERVE_HOST，和 RSERVE_PORT
             RConnection c = new RConnection(RSERVE_HOST, RSERVE_PORT);
 
             InputStream in = new FileInputStream(originFile);
-
+            // 在Rserve端创建一个临时文件，存储原始文件
             RFileOutputStream os = c.createFile(tempFileNameIn);
 
             int bufsize;
@@ -145,20 +146,20 @@ public class RemoteDataFrameService {
             in.close();
             os.close();
             String loadlib = "library(rjson)";
-            // 跳到这里
+            // 调用一个R包
             c.voidEval(loadlib);
             String rscript = readLocalResource(DATAVERSE_R_PREPROCESSING);
-
+            // 读入R语言脚本
             c.voidEval(rscript);
 
             String runPreprocessing = "json<-preprocess(filename=\""+ tempFileNameIn +"\")";
-
+            //执行脚本
             c.voidEval(runPreprocessing);
 
             // Save the output in a temp file:
 
             String saveResult = "write(json, file='"+ tempFileNameOut +"')";
-
+            //保存结果
             c.voidEval(saveResult);
 
             // Finally, transfer the saved file back on the application side:
